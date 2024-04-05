@@ -25,6 +25,9 @@ class Calculator
             case 1:
                 result = Add(num1, num2);
                 break;
+            case 2:
+                result = Substract(num1, num2);
+                break;
             default:
                 Console.WriteLine("Неверно выбрана операция");
                 break;
@@ -36,4 +39,9 @@ class Calculator
     static double Add(double a, double b)
     {
         return a + b;
+    }
+
+    static double Substract(double a, double b)
+    {
+        return a - b;
     }
