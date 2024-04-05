@@ -4,17 +4,17 @@ class Calculator
 {
     static void Main()
     {
-        Console.WriteLine("Введите первое число:");
+        Console.WriteLine("Г‚ГўДєГ¤ДЌЕ€Дє ДЏДєД‘ГўГ®Дє Г·ДЌЕ„Г«Г®:");
         double num1 = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine("Введите второе число:");
+        Console.WriteLine("Г‚ГўДєГ¤ДЌЕ€Дє ГўЕ€Г®Д‘Г®Дє Г·ДЌЕ„Г«Г®:");
         double num2 = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine("Выберите операцию:");
-        Console.WriteLine("1. Сложение");
-        Console.WriteLine("2. Вычитание");
-        Console.WriteLine("3. Умножение");
-        Console.WriteLine("4. Деление");
+        Console.WriteLine("Г‚Е±ГЎДєД‘ДЌЕ€Дє Г®ДЏДєД‘Е•Г¶ДЌЕЈ:");
+        Console.WriteLine("1. ЕѓГ«Г®Д‡ДєГ­ДЌДє");
+        Console.WriteLine("2. Г‚Е±Г·ДЌЕ€Е•Г­ДЌДє");
+        Console.WriteLine("3. Г“Д›Г­Г®Д‡ДєГ­ДЌДє");
+        Console.WriteLine("4. Г„ДєГ«ДєГ­ДЌДє");
 
         int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -34,12 +34,13 @@ class Calculator
             case 4:
                 result = Divide(num1, num2);
                 break;
+
             default:
-                Console.WriteLine("Неверно выбрана операция");
+                Console.WriteLine("ГЌДєГўДєД‘Г­Г® ГўЕ±ГЎД‘Е•Г­Е• Г®ДЏДєД‘Е•Г¶ДЌЛ™");
                 break;
         }
 
-        Console.WriteLine("Результат: " + result);
+        Console.WriteLine("ДђДєГ§ГіГ«ГјЕ€Е•Е€: " + result);
     }
 
     static double Add(double a, double b)
@@ -65,8 +66,9 @@ class Calculator
         }
         else
         {
-            Console.WriteLine("На ноль делить нельзя!");
+            Console.WriteLine("ГЌЕ• Г­Г®Г«Гј Г¤ДєГ«ДЌЕ€Гј Г­ДєГ«ГјГ§Л™!");
             return 0;
         }
     }
 }
+
