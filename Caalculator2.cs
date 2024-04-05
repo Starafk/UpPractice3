@@ -28,6 +28,12 @@ class Calculator
             case 2:
                 result = Substract(num1, num2);
                 break;
+            case 3:
+                result = Multiply(num1, num2);
+                break;
+            case 4:
+                result = Divide(num1, num2);
+                break;
             default:
                 Console.WriteLine("Неверно выбрана операция");
                 break;
@@ -45,3 +51,22 @@ class Calculator
     {
         return a - b;
     }
+
+    static double Multiply(double a, double b)
+    {
+        return a * b;
+    }
+
+    static double Divide(double a, double b)
+    {
+        if (b != 0)
+        {
+            return a / b;
+        }
+        else
+        {
+            Console.WriteLine("На ноль делить нельзя!");
+            return 0;
+        }
+    }
+}
