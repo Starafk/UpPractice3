@@ -28,6 +28,9 @@ class Calculator
             case 2:
                 result = Substract(num1, num2);
                 break;
+            case 3:
+                result = Multiply(num1, num2);
+                break;
             default:
                 Console.WriteLine("Неверно выбрана операция");
                 break;
@@ -44,4 +47,9 @@ class Calculator
     static double Substract(double a, double b)
     {
         return a - b;
+    }
+
+    static double Multiply(double a, double b)
+    {
+        return a * b;
     }
